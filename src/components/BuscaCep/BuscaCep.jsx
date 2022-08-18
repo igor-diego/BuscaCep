@@ -7,9 +7,13 @@ export const BuscaCep = () => {
     async function handleCep() {
         const resposta = await fetch('https://viacep.com.br/ws/01001000/json/')
         const json = await resposta.json()
+        setCep()
         
     }
   return (
-    <div></div>
+    <div>
+    <input type="text" />
+      <button>buscar</button>
+    </div>
   )
 }
